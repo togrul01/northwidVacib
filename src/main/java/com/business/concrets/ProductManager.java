@@ -70,7 +70,7 @@ public class ProductManager implements ProductService {
     @Override
     public DataResults<List<Product>> getByCategoryIdIn(List<Integer> categories) {
         return new SuccessDataResult<List<Product>>
-                (productDao.getByCategoryIn(categories), "Data view");
+                (productDao.getByCategory_CategoryIdIn(categories), "Data view");
     }
 
     @Override
